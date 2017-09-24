@@ -109,3 +109,16 @@ end
 14. Generate a job
 
 `docker-compose run web rails generate job Example`
+
+15. Create sidekiq container
+
+```
+  sidekiq:
+    build: .
+    command: bundle exec sidekiq
+    volumes:
+      - .:/myapp
+    depends_on:
+      - db
+      - redis
+```

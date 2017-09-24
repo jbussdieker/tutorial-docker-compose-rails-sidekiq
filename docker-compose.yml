@@ -14,3 +14,11 @@ services:
     depends_on:
       - db
       - redis
+  sidekiq:
+    build: .
+    command: bundle exec sidekiq
+    volumes:
+      - .:/myapp
+    depends_on:
+      - db
+      - redis
