@@ -87,3 +87,9 @@ test:
 redis:
   image: redis
 ```
+
+12. Add active job queue config
+
+```
+config.active_job.queue_adapter = :sidekiq
+```
