@@ -80,3 +80,10 @@ test:
 10. Update Gemfile.lock
 
 `docker-compose run web bundle install`
+
+11. Add redis container
+
+```
+redis:
+  image: redis
+```
