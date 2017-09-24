@@ -10,3 +10,10 @@ ADD Gemfile.lock /myapp/Gemfile.lock
 RUN bundle install
 ADD . /myapp
 ```
+
+2. Create a Gemfile
+
+```
+source 'https://rubygems.org'
+gem 'rails', '5.0.0.1'
+```
