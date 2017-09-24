@@ -72,3 +72,7 @@ test:
 8. Create the database
 
 `docker-compose run web rake db:create`
+
+9. Add sidekiq gem
+
+`gem 'sidekiq'`
