@@ -76,3 +76,7 @@ test:
 9. Add sidekiq gem
 
 `gem 'sidekiq'`
+
+10. Update Gemfile.lock
+
+`docker-compose run web bundle install`
