@@ -105,3 +105,7 @@ Sidekiq.configure_client do |config|
   config.redis = { url: 'redis://redis.example.com:7372/12' }
 end
 ```
+
+14. Generate a job
+
+`docker-compose run web rails generate job Example`
