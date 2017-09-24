@@ -47,3 +47,24 @@ services:
 6. Build the containers
 
 `docker-compose build`
+
+7. Update the database config/database.yml
+
+```
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password:
+  pool: 5
+
+development:
+  <<: *default
+  database: myapp_development
+
+
+test:
+  <<: *default
+  database: myapp_test
+```
