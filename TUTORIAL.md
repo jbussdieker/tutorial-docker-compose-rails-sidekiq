@@ -43,3 +43,7 @@ services:
 5. Generate the project
 
 `docker-compose run web rails new . --force --database=postgresql`
+
+6. Build the containers
+
+`docker-compose build`
