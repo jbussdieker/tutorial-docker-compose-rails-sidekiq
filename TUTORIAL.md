@@ -39,3 +39,7 @@ services:
     depends_on:
       - db
 ```
+
+5. Generate the project
+
+`docker-compose run web rails new . --force --database=postgresql`
