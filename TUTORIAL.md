@@ -68,3 +68,7 @@ test:
   <<: *default
   database: myapp_test
 ```
+
+8. Create the database
+
+`docker-compose run web rake db:create`
